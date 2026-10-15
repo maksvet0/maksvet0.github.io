@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как исполнить файл форматом PXF2</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Как исполнить файл форматом PXF2</h1>
+    </div>
+    <h2>Требования</h2>
+    <ul>
+        <li>Компьютер на Linux</li>
+    </ul>
+    <h2>Как работает ExecPXF</h2>
+    <p>ExecPXF сначала парсит ваш PXF2-файл через библиотеку ReadPXF. Затем выделяет изменяемую память через mmap, загружает туда исполняемый код с файла. Помечает память как неизменяемую и запускаемую (в целях безопасности), а потом прыгает в неё чтоб запустить программу.</p>
+    <h2>Как запустить PXF2-файл</h2>
+    <p>Просто пропишите <strong>./[путь до исполняемого файла ExecPXF] [путь до вашего PXF2-файла]</strong></p>
+</body>
+</html>
